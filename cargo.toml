@@ -1,0 +1,26 @@
+[package]
+name = "solana-streamer"
+version = "0.1.0"
+authors = ["Aditya <domaditya10@gmail.com>"]
+edition = "2021"
+
+
+[dependencies]
+geyser = "0.2.0"
+log = "0.4.14"
+postgres = "0.19.7"
+tokio = { version = "1", features = ["full"] }
+snafu = { version = "0.7", features = ["backtraces"] }
+solana-client = { git = "https://github.com/Aditya-dom/solana-labs/solana-program-runtime", branch = "master"}
+tokio-postgres = { version = "0.7", features = ["with-serde_json-1"] }
+crossbeam-channel = "0.5.3"
+env_logger = "0.9"
+futures = "0.3"
+serde = "1.0"
+serde_json = "1.0"
+
+
+
+[dev-dependencies]
+tokio-test = "0.4"
+
